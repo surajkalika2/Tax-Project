@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <description>Display all the Alphabets</description>
+    <display-name>ABCWeb</display-name>
+    <servlet-name>ABCWeb</servlet-name>
+    <servlet-class>com.learning.j10.web.ABCWeb</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ABCWeb</servlet-name>
+    <url-pattern>/abc</url-pattern>
+  </servlet-mapping>
+  <display-name>01.ABC</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>TaxRuleLookupWeb</display-name>
+    <servlet-name>TaxRuleLookupWeb</servlet-name>
+    <servlet-class>com.learning.j10.web.TaxRuleLookupWeb</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TaxRuleLookupWeb</servlet-name>
+    <url-pattern>/taxrules</url-pattern>
+        <url-pattern>/home</url-pattern>
+        <url-pattern>/all-taxrules</url-pattern>
+        <url-pattern>/taxrule-2020</url-pattern>
+        <url-pattern>/taxrule-2019</url-pattern>
+        
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ClientsWeb</display-name>
+    <servlet-name>ClientsWeb</servlet-name>
+    <servlet-class>com.learning.j10.web.ClientsWeb</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClientsWeb</servlet-name>
+    <url-pattern>/clients</url-pattern>
+    <url-pattern>/client.update</url-pattern>
+    <url-pattern>/client.view</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AbstractWeb</display-name>
+    <servlet-name>AbstractWeb</servlet-name>
+    <servlet-class>com.learning.j10.web._AbstractWeb</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>LoginWeb</display-name>
+    <servlet-name>LoginWeb</servlet-name>
+    <servlet-class>com.learning.j10.web.LoginWeb</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginWeb</servlet-name>
+    <url-pattern>/login</url-pattern>
+    <url-pattern>/login-verification</url-pattern>
+  </servlet-mapping>
+</web-app>
